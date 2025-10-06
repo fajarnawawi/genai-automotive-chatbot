@@ -2,7 +2,6 @@
 
 ## Project: Conversational AI for Automotive Sales Analytics
 **Date**: October 4, 2025  
-**Role**: AI Engineer  
 **Deliverable**: Production-Ready Chatbot Application
 
 ---
@@ -55,7 +54,7 @@ cloud/
 
 #### C. LLM Module (`llm.py`)
 - Vertex AI initialization
-- ChatVertexAI configuration with Gemini 1.5 Pro
+- ChatVertexAI configuration with Gemini 2.0 Flash Lite
 - Temperature and parameter control
 - Health check functionality
 - Singleton pattern for model management
@@ -161,7 +160,7 @@ cloud/
 | Component | Technology | Version |
 |-----------|-----------|---------|
 | Frontend | Streamlit | 1.31.0 |
-| LLM | Vertex AI Gemini | 1.5 Pro |
+| LLM | Vertex AI Gemini | 2.0 Flash Lite |
 | Framework | LangChain | 0.1.10 |
 | Database | BigQuery | Latest |
 | Runtime | Python | 3.11 |
@@ -183,7 +182,7 @@ cloud/
 ### Configuration Parameters
 
 **Vertex AI Gemini:**
-- Model: gemini-1.5-pro (configurable)
+- Model: gemini-2.0-flash-lite-001 (configurable)
 - Temperature: 0.1 (low for accuracy)
 - Max tokens: 2048
 - Top-p: 0.95

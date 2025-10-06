@@ -64,7 +64,7 @@ cloud/
 ### Prerequisites
 
 - Google Cloud Project with billing enabled
-- BigQuery dataset `automotive_data` (see Data Engineer deliverables)
+- BigQuery dataset `automotive_data`
 - Python 3.11+
 - Google Cloud SDK
 
@@ -124,7 +124,7 @@ See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for comprehensive deployment inst
 | `GCP_PROJECT_ID` | Google Cloud Project ID | Required |
 | `GCP_LOCATION` | Vertex AI location | `us-central1` |
 | `BIGQUERY_DATASET` | BigQuery dataset name | `automotive_data` |
-| `GEMINI_MODEL` | Gemini model name | `gemini-1.5-pro` |
+| `GEMINI_MODEL` | Gemini model name | `gemini-2.0-flash-lite-001` |
 | `GEMINI_TEMPERATURE` | Model temperature | `0.1` |
 | `LOG_LEVEL` | Logging level | `INFO` |
 

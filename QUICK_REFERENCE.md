@@ -97,7 +97,7 @@ gcloud run services delete SERVICE_NAME --region REGION
 # Required
 GCP_PROJECT_ID=your-project-id
 BIGQUERY_DATASET=automotive_data
-GEMINI_MODEL=gemini-1.5-pro
+GEMINI_MODEL=gemini-2.0-flash-lite-001
 
 # Optional - Credentials (local only)
 GOOGLE_APPLICATION_CREDENTIALS=/path/to/key.json

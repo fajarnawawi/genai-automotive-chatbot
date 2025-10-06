@@ -144,7 +144,7 @@
 │  (database.py) │  │    (llm.py)    │  │   (agent.py)   │
 ├────────────────┤  ├────────────────┤  ├────────────────┤
 │ • BigQuery     │  │ • Vertex AI    │  │ • LangChain    │
-│ • SQLDatabase  │  │ • Gemini 1.5   │  │ • SQL Tools    │
+│ • SQLDatabase  │  │ • Gemini 2.0   │  │ • SQL Tools    │
 │ • Connection   │  │ • Chat Model   │  │ • Query Logic  │
 └────────┬───────┘  └────────┬───────┘  └────────┬───────┘
          │                   │                    │

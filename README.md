@@ -9,7 +9,7 @@ An AI-powered conversational analytics platform for automotive sales data, built
 
 ✨ **Natural Language Querying**: Ask questions in plain English, get instant SQL-powered insights
 
-🤖 **Powered by Gemini 1.5 Pro**: Advanced language understanding with Google's latest AI
+🤖 **Powered by Gemini 2.0 Flash Lite**: Advanced language understanding with Google's latest AI
 
 📊 **Comprehensive Analytics**: Sales, products, dealerships, customers, marketing, and competitive intelligence
 
@@ -162,7 +162,7 @@ Once deployed, you can ask questions like:
 
 ### Core Technologies
 - **Frontend**: Streamlit 1.31.0
-- **AI/ML**: Google Cloud Vertex AI (Gemini 1.5 Pro)
+- **AI/ML**: Google Cloud Vertex AI (Gemini 2.0 Flash Lite)
 - **Database**: Google BigQuery
 - **Framework**: LangChain 0.1.10
 

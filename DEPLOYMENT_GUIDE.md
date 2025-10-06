@@ -131,7 +131,7 @@ GCP_PROJECT_ID: "your-actual-project-id"
 GCP_LOCATION: "us-central1"
 BIGQUERY_DATASET: "automotive_data"
 BIGQUERY_LOCATION: "US"
-GEMINI_MODEL: "gemini-1.5-pro"
+GEMINI_MODEL: "gemini-2.0-flash-lite-001"
 GEMINI_TEMPERATURE: "0.1"
 GEMINI_MAX_OUTPUT_TOKENS: "2048"
 GEMINI_TOP_P: "0.95"
@@ -187,7 +187,7 @@ gcloud run deploy ${SERVICE_NAME} \
   --max-instances=20 \
   --set-env-vars="GCP_PROJECT_ID=${PROJECT_ID}" \
   --set-env-vars="BIGQUERY_DATASET=automotive_data" \
-  --set-env-vars="GEMINI_MODEL=gemini-1.5-pro" \
+  --set-env-vars="GEMINI_MODEL=gemini-2.0-flash-lite-001" \
   --allow-unauthenticated \
   --project=${PROJECT_ID}
 ```
@@ -344,7 +344,7 @@ gcloud run services update ${SERVICE_NAME} \
 # Update multiple variables
 gcloud run services update ${SERVICE_NAME} \
   --region=${REGION} \
-  --update-env-vars="GEMINI_MODEL=gemini-1.5-flash,GEMINI_TEMPERATURE=0.2"
+  --update-env-vars="GEMINI_MODEL=gemini-2.0-flash-lite-001,GEMINI_TEMPERATURE=0.2"
 
 # Update from file
 gcloud run services update ${SERVICE_NAME} \

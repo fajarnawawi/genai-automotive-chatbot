@@ -1,0 +1,24 @@
+# Core Application
+streamlit==1.31.0
+python-dotenv==1.0.0
+
+# Google Cloud
+google-cloud-bigquery==3.18.0
+google-cloud-aiplatform==1.65.0
+
+# LangChain 
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-google-vertexai==1.0.10
+langchain-core==0.2.38
+
+# Database
+sqlalchemy==2.0.27
+sqlalchemy-bigquery==1.11.0
+
+# Utilities
+pandas==2.2.0
+numpy==1.26.4
+
+# Logging and monitoring
+protobuf==4.25.3

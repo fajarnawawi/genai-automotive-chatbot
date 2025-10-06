@@ -1,0 +1,23 @@
+# Cloud Run Environment Variables Configuration
+# Use this file to configure environment variables for Cloud Run deployment
+# 
+# Usage with gcloud:
+#   gcloud run services update SERVICE_NAME --env-vars-file=env-vars.yaml
+#
+# Or use in deployment script
+
+GCP_PROJECT_ID: "your-project-id"
+GCP_LOCATION: "us-central1"
+BIGQUERY_DATASET: "automotive_data"
+BIGQUERY_LOCATION: "US"
+GEMINI_MODEL: "gemini-2.0-flash-lite-001"
+GEMINI_TEMPERATURE: "0.1"
+GEMINI_MAX_OUTPUT_TOKENS: "2048"
+GEMINI_TOP_P: "0.95"
+GEMINI_TOP_K: "40"
+MAX_CHAT_HISTORY: "10"
+LOG_LEVEL: "INFO"
+SQL_AGENT_MAX_ITERATIONS: "15"
+SQL_AGENT_MAX_EXECUTION_TIME: "100"
+SQL_TOP_K_RESULTS: "10"
+SESSION_TIMEOUT_MINUTES: "30"

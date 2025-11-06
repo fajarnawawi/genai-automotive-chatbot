@@ -1,0 +1,46 @@
+# AWS ECS Task Definition Environment Variables
+# Use this file as reference when creating ECS task definitions
+
+# AWS Configuration
+AWS_REGION: us-east-1
+
+# Amazon Redshift Configuration
+REDSHIFT_HOST: your-cluster.us-east-1.redshift.amazonaws.com
+REDSHIFT_PORT: "5439"
+REDSHIFT_DATABASE: automotive_data
+REDSHIFT_SCHEMA: public
+REDSHIFT_USER: admin
+# IMPORTANT: Store REDSHIFT_PASSWORD in AWS Secrets Manager and reference it as a secret
+# Do not put passwords directly in this file for production
+# REDSHIFT_PASSWORD: Use AWS Secrets Manager
+
+# IAM Authentication (Recommended for production)
+REDSHIFT_USE_IAM: "true"
+REDSHIFT_CLUSTER_IDENTIFIER: automotive-cluster
+
+# Amazon Bedrock Configuration
+BEDROCK_MODEL_ID: anthropic.claude-3-5-sonnet-20241022-v2:0
+BEDROCK_TEMPERATURE: "0.1"
+BEDROCK_MAX_TOKENS: "2048"
+BEDROCK_TOP_P: "0.95"
+BEDROCK_TOP_K: "250"
+
+# Application Configuration
+MAX_CHAT_HISTORY: "10"
+LOG_LEVEL: INFO
+
+# CloudWatch Logging
+CLOUDWATCH_LOG_GROUP: /aws/automotive-chatbot
+CLOUDWATCH_LOG_STREAM: app
+
+# SQL Agent Configuration
+SQL_AGENT_MAX_ITERATIONS: "15"
+SQL_AGENT_MAX_EXECUTION_TIME: "100"
+SQL_TOP_K_RESULTS: "10"
+
+# Session Configuration
+SESSION_TIMEOUT_MINUTES: "30"
+
+# Note: For ECS, use IAM roles for AWS service access
+# Do not set AWS_ACCESS_KEY_ID or AWS_SECRET_ACCESS_KEY in production
+# Instead, attach appropriate IAM roles to your ECS task
